@@ -1,0 +1,17 @@
+@import 'abstracts/variables';
+
+.kasa-nav {
+    display:flex;
+    gap:57px;
+    a {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: 0em;
+        color:$primary-color;
+        text-decoration:none;
+        &:active {
+            text-decoration:underline;
+        }
+    }
+}

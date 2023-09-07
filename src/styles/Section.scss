@@ -1,0 +1,31 @@
+@import 'abstracts/variables';
+
+.kasa-section {
+    margin:$default-spacing-top $default-spacing-side 0px $default-spacing-side;
+    opacity: 0.3px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:223px;
+    border-radius: $default-radius;
+
+    &--accueil {
+        background: $darken, url('../assets/bg_accueil.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &--apropos {
+        background: $darken, url('../assets/bg_apropos.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 68px;
+        letter-spacing: 0em;
+        color: $secondary-color;
+    }
+}
