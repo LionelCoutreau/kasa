@@ -1,0 +1,12 @@
+@import 'abstracts/variables';
+
+.kasa-gallery {
+    margin:$default-spacing-top $default-spacing-side 0px $default-spacing-side;
+    padding:$default-spacing-top;
+    border-radius: $default-radius;
+    background: #F6F6F6;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, 340px);
+    gap:$default-spacing-top;
+    justify-content: space-evenly;
+}

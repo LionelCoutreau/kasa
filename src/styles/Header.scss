@@ -1,0 +1,9 @@
+.kasa-header {
+    padding:45px 90px 0px 90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    &__logo {
+        width:210px;
+    }
+}
