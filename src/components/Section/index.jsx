@@ -1,4 +1,4 @@
-import '../styles/Section.scss';
+import './index.scss';
 
 const Section = ({pageName}) => {
     const pages = [

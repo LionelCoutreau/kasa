@@ -1,4 +1,4 @@
-@import 'abstracts/variables';
+@import '../../styles/abstracts/variables';
 
 .kasa-section {
     margin:$default-spacing-top $default-spacing-side 0px $default-spacing-side;
@@ -10,13 +10,13 @@
     border-radius: $default-radius;
 
     &--accueil {
-        background: $darken, url('../assets/bg_accueil.png') no-repeat;
+        background: $darken, url('../../assets/bg_accueil.png') no-repeat;
         background-size: cover;
         background-position: center;
     }
 
     &--apropos {
-        background: $darken, url('../assets/bg_apropos.png') no-repeat;
+        background: $darken, url('../../assets/bg_apropos.png') no-repeat;
         background-size: cover;
         background-position: center;
     }

@@ -1,4 +1,4 @@
-@import 'abstracts/variables';
+@import '../../styles/abstracts/variables';
 
 .kasa-nav {
     display:flex;
@@ -10,7 +10,7 @@
         letter-spacing: 0em;
         color:$primary-color;
         text-decoration:none;
-        &:active {
+        &.active {
             text-decoration:underline;
         }
     }
