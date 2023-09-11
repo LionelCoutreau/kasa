@@ -1,4 +1,4 @@
-import '../styles/Carrousel.scss';
+import './index.scss';
 
 const Carrousel = () => {
     return (

@@ -1,4 +1,4 @@
-import '../styles/Thumb.scss';
+import './index.scss';
 
 const Thumb = ({logementTitle, logementCover}) => {
     return (

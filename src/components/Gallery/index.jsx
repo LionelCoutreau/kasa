@@ -1,6 +1,6 @@
-import Thumb from './Thumb'
-import '../styles/Gallery.scss';
-import logements from '../datas/logements.json'
+import Thumb from '../Thumb'
+import './index.scss';
+import logements from '../../datas/logements.json'
 
 const Gallery = () => {
     return (
