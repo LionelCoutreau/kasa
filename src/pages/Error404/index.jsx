@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
@@ -11,7 +11,7 @@ const Error404 = () => {
             <main className="kasa-404">
                 <h2>404</h2>
                 <p>Oups! La page que vous demandez n'existe pas</p>
-                <NavLink to='/'>Retourner sur la page d'accueil</NavLink>
+                <Link to='/'>Retourner sur la page d'accueil</Link>
             </main>
             <Footer />
         </>

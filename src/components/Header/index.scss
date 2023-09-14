@@ -1,9 +1,21 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
 .kasa-header {
-    padding:45px 90px 0px 90px;
+    padding:$default-spacing-top $default-spacing-side 0px $default-spacing-side;
     display:flex;
     align-items:center;
     justify-content:space-between;
+
+    @include mobile-only {
+        padding:$default-spacing-mobile $default-spacing-mobile 0px $default-spacing-mobile;
+    }
+
     &__logo {
         width:210px;
+
+        @include mobile-only {
+            width:145px;
+        }
     }
 }

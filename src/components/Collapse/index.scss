@@ -1,0 +1,71 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.kasa-accordion {
+    background-color:$tertiary-color;
+    border-radius:5px;
+    overflow:hidden;
+
+    &__item {
+        overflow: hidden;
+        transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+        height: auto;
+        max-height: 9999px;
+    }
+
+    &__title {
+        background-color:$primary-color;
+        color:$secondary-color;
+        padding:10px 15px;
+        border-radius:5px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        cursor:pointer;
+        font-size:24px;
+
+        @include mobile-only {
+            font-size:13px;
+            padding:10px;
+        }
+
+        &::after {
+            content: url(../../assets/arrow.svg);
+            transition: all 0.3s linear;
+            transform:rotate(0deg);
+
+            @include mobile-only {
+                content: url(../../assets/arrow-small.svg);
+            }
+        }
+    }
+
+    &__content {
+        padding:20px;
+        margin:0px;
+        font-size:18px;
+        color:$primary-color;
+
+        @include mobile-only {
+            font-size:12px;
+        }
+    
+        ul {
+            margin:0px;
+            padding:0pc;
+            list-style-type:none;
+        }
+    }
+
+    &--collapsed {
+        max-height: 0px;
+        transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+    }
+    
+    &--open {
+        &::after {
+            transition: all 0.3s linear;
+            transform:rotate(-180deg);
+        }
+    }
+}

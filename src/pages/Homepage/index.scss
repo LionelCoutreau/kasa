@@ -1,0 +1,10 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.kasa-accueil {
+    padding:$default-spacing-top $default-spacing-side 0px $default-spacing-side;
+
+    @include mobile-only {
+        padding:$default-spacing-mobile;
+    }
+}

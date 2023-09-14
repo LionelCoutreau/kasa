@@ -1,7 +1,8 @@
 @import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
 
 .kasa-gallery {
-    margin:$default-spacing-top $default-spacing-side 0px $default-spacing-side;
+    margin:$default-spacing-top 0px;
     padding:$default-spacing-top;
     border-radius: $default-radius;
     background: #F6F6F6;
@@ -9,4 +10,13 @@
     grid-template-columns:repeat(auto-fit, 340px);
     gap:$default-spacing-top;
     justify-content: space-evenly;
+
+    @include mobile-only {
+        display:flex;
+        flex-direction:column;
+        background: transparent;
+        margin:0px;
+        padding:$default-spacing-mobile 0px 0px 0px;
+        gap:$default-spacing-mobile;
+    }
 }

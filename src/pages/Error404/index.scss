@@ -1,4 +1,5 @@
 @import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
 
 .kasa-404 {
     display:flex;
@@ -11,24 +12,35 @@
         font-size:250px;
         font-weight:bold;
         margin:50px 0px;
+
+        @include mobile-only {
+            font-size:96px;
+            margin:70px 0px;
+        }
     }
 
     p {
         font-family: 'Montserrat';
         font-size: 36px;
         font-weight: 500;
-        line-height: 51px;
-        letter-spacing: 0em;
 
+        @include mobile-only {
+            font-size: 18px;
+            text-align:center;
+            margin-bottom:50px;
+        }
     }
 
     a {
         font-family: 'Montserrat';
         font-size: 18px;
         font-weight: 500;
-        line-height: 26px;
-        letter-spacing: 0em;
         margin:50px 0px;
         color:$primary-color;
+        @include mobile-only {
+            font-size: 14px;
+            text-align:center;
+            margin-bottom:100px;
+        }
     }
 }

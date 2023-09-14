@@ -1,0 +1,24 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.kasa-about {
+    padding:$default-spacing-top $default-spacing-side 0px $default-spacing-side;
+
+    @include mobile-only {
+        padding: $default-spacing-mobile;
+    }
+
+}
+
+.kasa-accordions {
+    margin:30px $default-spacing-side;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    align-items:stretch;
+
+    @include mobile-only {
+        margin:$default-spacing-mobile 0px 0px 0px;
+        gap:$default-spacing-mobile;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.kasa-tag {
+    background-color:$primary-color;
+    border-radius:10px;
+    font-size: 14px;
+    padding:4px 10px;
+    color:$secondary-color;
+    min-width:115px;
+    text-align: center;
+
+    @include mobile-only {
+        min-width:60px;
+        border-radius:5px;
+        font-size: 10px;
+    }
+}

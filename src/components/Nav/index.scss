@@ -1,8 +1,14 @@
 @import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
 
 .kasa-nav {
     display:flex;
     gap:57px;
+
+    @include mobile-only {
+        gap:30px;
+    }
+
     a {
         font-size: 24px;
         font-weight: 500;
@@ -10,6 +16,12 @@
         letter-spacing: 0em;
         color:$primary-color;
         text-decoration:none;
+
+        @include mobile-only {
+            font-size: 12px;
+            text-transform:uppercase;
+        }
+        
         &.active {
             text-decoration:underline;
         }

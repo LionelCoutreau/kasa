@@ -1,0 +1,94 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.kasa-housing {
+    padding:$default-spacing-top $default-spacing-side 0px $default-spacing-side;
+
+    @include mobile-only {
+        padding:$default-spacing-mobile;
+    }
+
+    &__informations {
+        margin-top:10px;
+        display:flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @include mobile-only {
+            flex-direction:column;
+        }
+    }
+
+    &__logement {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        color:$primary-color;
+
+        @include mobile-only {
+            font-size: 18px;
+        }
+    }
+
+    &__ville {
+        font-size: 18px;
+        font-weight: 500;
+        color:$primary-color;
+
+        @include mobile-only {
+            font-size: 14px;
+            margin-top:10px;
+        }
+    }
+
+    &__profile {
+        margin-top:10px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+        gap:10px;
+
+        @include mobile-only {
+            width:100%;
+            margin:0px 0px 10px 0px;
+            flex-direction: row-reverse;
+            align-items:center;
+            justify-content: space-between;
+            gap:0px;
+        }
+    }
+
+    &__tags {
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        gap:10px;
+        padding:25px 0px;
+
+        @include mobile-only {
+            padding:10px 0px;
+        }
+    }
+
+    &__specifications {
+        margin-bottom:$default-spacing-top;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        align-items: start;
+        gap:$default-spacing-side;
+
+        @include mobile-only {
+            display:flex;
+            flex-direction:column;
+            align-items: stretch;
+            gap:$default-spacing-mobile;
+            margin-bottom:0px;
+        }
+    }
+}

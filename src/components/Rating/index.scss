@@ -1,0 +1,12 @@
+@import '../../styles/abstracts/mixins';
+
+.kasa-rating {
+    display:flex;
+    img {
+        padding:5px;
+        @include mobile-only {
+            width:12px;
+            padding:2px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@mixin mobile-only {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin footer-padding {
+    padding-bottom:$footer-height;
+}
+
+@mixin footer-padding-mobile{
+    padding-bottom:calc($default-spacing-mobile + $footer-height);
+}
