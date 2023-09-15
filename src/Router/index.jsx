@@ -6,22 +6,14 @@ import Error404 from '../pages/Error404'
 
 const AppRouter = () => {
     return (
-        /*<BrowserRouter>
+        <BrowserRouter>
             <Routes>
             <Route exact path='/' element={<Homepage />} />
             <Route path='/about' element={<About />} />
             <Route path='/housing/:logementId' element={<Housing />} />
             <Route path='*' element={<Error404 />} />
             </Routes>
-        </BrowserRouter>*/
-        <HashRouter>
-            <Routes>
-            <Route exact path='/' element={<Homepage />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/housing/:logementId' element={<Housing />} />
-            <Route path='*' element={<Error404 />} />
-            </Routes>
-        </HashRouter>
+        </BrowserRouter>
 )
 }
 
