@@ -8,14 +8,11 @@ const Carrousel = ({ pictures }) => {
     const changePicture = (isPrevious) => {
         const lastIndex = pictures.length-1
         let currentIndex = pictureIndex
-        console.log(lastIndex, "/", currentIndex)
 
         if(isPrevious === true) {
             currentIndex <= 0 ? currentIndex = lastIndex : currentIndex--
-            console.log(currentIndex)
         } else {
             currentIndex >= lastIndex ? currentIndex = 0 : currentIndex++
-            console.log(currentIndex)
         }
 
         setPictureIndex(currentIndex)

@@ -35,6 +35,7 @@
         width:46px;
         max-width:46px;
         padding:20px;
+        cursor:pointer;
 
         @include mobile-only {
             width:20px;

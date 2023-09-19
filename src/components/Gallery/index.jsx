@@ -8,7 +8,7 @@ const Gallery = () => {
         <div className="kasa-gallery">
             {logements.map((logement) => {
                 return (
-                    <Link key={logement.id} to={`/Housing/${logement.id}`}>
+                    <Link key={logement.id} to={`/housing/${logement.id}`}>
                         <Thumb logementTitle={logement.title} logementCover={logement.cover} />
                     </Link>
                 );

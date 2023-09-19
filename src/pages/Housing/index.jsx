@@ -7,11 +7,17 @@ import Collapse from '../../components/Collapse'
 import Footer from '../../components/Footer'
 import logements from '../../datas/logements.json'
 import { useParams } from 'react-router-dom'
+import Error404 from '../../pages/Error404'
+
 import './index.scss';
 
 const Housing = () => {
     const routeParams = useParams();
     const logementData = logements.filter(logement => logement.id === routeParams.logementId)[0];
+
+    if(!logementData) {
+        return <Error404 />
+    }
 
     return (
         <>
