@@ -7,7 +7,7 @@
     @include mobile-only {
         padding: $default-spacing-mobile;
     }
-
+    flex:1;
 }
 
 .kasa-accordions {

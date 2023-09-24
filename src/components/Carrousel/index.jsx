@@ -22,9 +22,9 @@ const Carrousel = ({ pictures }) => {
         <div className="kasa-carrousel">
             <img className="kasa-carrousel__picture" src={pictures[pictureIndex]} alt={pictureIndex+1} />
             <div className="kasa-carrousel__arrows">
-                <img className="kasa-carrousel__arrow-left" src={arrow} alt="Précédent" onClick={() => changePicture(true)} />
+                {pictures.length > 1 && <img className="kasa-carrousel__arrow-left" src={arrow} alt="Précédent" onClick={() => changePicture(true)} />}                 
                 <div className="kasa-carrousel__index">{`${pictureIndex+1}/${pictures.length}`}</div>
-                <img className="kasa-carrousel__arrow-right" src={arrow} alt="Suivant" onClick={() => changePicture(false)} />
+                {pictures.length > 1 && <img className="kasa-carrousel__arrow-right" src={arrow} alt="Suivant" onClick={() => changePicture(false)} />}                 
             </div>
         </div>
     );

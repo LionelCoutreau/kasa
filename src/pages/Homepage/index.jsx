@@ -2,6 +2,8 @@ import Header from '../../components/Header'
 import Section from '../../components/Section'
 import Gallery from '../../components/Gallery'
 import Footer from '../../components/Footer'
+import picture from '../../assets/bg_accueil.png'
+
 import './index.scss';
 
 const Homepage = () => {
@@ -9,7 +11,7 @@ const Homepage = () => {
         <>
             <Header />
             <main className="kasa-accueil">
-                <Section pageName='accueil' />
+                <Section pageTitle='Chez vous, partout et ailleurs' pageBackground={picture} />
                 <Gallery />
             </main>
             <Footer />

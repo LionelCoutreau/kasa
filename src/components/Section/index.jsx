@@ -1,24 +1,12 @@
 import './index.scss';
 
-const Section = ({pageName}) => {
-    const pages = [
-        {
-            "name": "accueil",
-            "title": "Chez vous, partout et ailleurs"
-        },
-        {
-            "name": "apropos",
-        }
-    ]
-    const actualPage = pages.filter(page => {
-        return page.name === pageName
-    })
-
+const Section = ({pageTitle, pageBackground}) => {
     return (
-        <div className={`kasa-section kasa-section--${actualPage[0].name}`}>
-            {actualPage[0].title && <h1>{actualPage[0].title}</h1>}
+        <div className={`kasa-section`}>
+            <img className="kasa-section__background" src={pageBackground} alt={pageTitle} />
+            {pageTitle && <h1>{pageTitle}</h1>}
         </div>
-    );
+    )
 }
 
 export default Section;
